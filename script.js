@@ -57,14 +57,6 @@ function iniciarMenu() {
 }
 
 function iniciarCartoes() {
-  document.querySelectorAll(".card").forEach((cartao) => {
-    cartao.addEventListener("mousemove", (evento) => {
-      const caixa = cartao.getBoundingClientRect();
-      cartao.style.setProperty("--mouse-x", `${evento.clientX - caixa.left}px`);
-      cartao.style.setProperty("--mouse-y", `${evento.clientY - caixa.top}px`);
-    });
-  });
-
   const dispositivoSemHover = window.matchMedia("(hover: none)");
   document.querySelectorAll("[data-revelar]").forEach((cartao) => {
     const definirAberto = (aberto) => cartao.classList.toggle("is-open", aberto);

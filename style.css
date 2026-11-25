@@ -292,31 +292,11 @@ h1, h2, h3 {
   background: var(--superficie);
   border: 1px solid var(--linha);
   border-radius: var(--raio);
-  transition: transform var(--transicao), border-color var(--transicao), box-shadow var(--transicao);
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  background: radial-gradient(260px circle at var(--mouse-x, 50%) var(--mouse-y, 0%), rgba(96, 165, 250, 0.13), transparent 70%);
-  transition: opacity var(--transicao);
-}
-
-.card > * {
-  position: relative;
+  transition: transform var(--transicao);
 }
 
 .card:hover, .card:focus-within {
   transform: translateY(-4px);
-  border-color: var(--linha-destaque);
-  box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.08), 0 16px 32px -20px rgba(96, 165, 250, 0.4);
-}
-
-.card:hover::before, .card:focus-within::before {
-  opacity: 1;
 }
 
 .card h3 {
@@ -690,7 +670,7 @@ h1, h2, h3 {
   background: var(--superficie);
   border: 1px solid var(--linha);
   border-radius: var(--raio-pequeno);
-  transition: border-color var(--transicao), color var(--transicao), transform var(--transicao);
+  transition: transform var(--transicao);
 }
 
 .skills img {
@@ -701,8 +681,6 @@ h1, h2, h3 {
 }
 
 .skills li:hover {
-  border-color: var(--linha-destaque);
-  color: var(--destaque);
   transform: translateY(-2px);
 }
 
@@ -776,28 +754,13 @@ h1, h2, h3 {
   gap: 1rem;
   width: min(100%, 560px);
   padding: 1.3rem 1.5rem;
-  border-color: rgba(37, 211, 102, 0.35);
-}
-
-.whatsapp-card:hover {
-  border-color: rgba(37, 211, 102, 0.35);
-  color: var(--texto);
-}
-
-.whatsapp-card:hover, .whatsapp-card:focus-within {
-  transform: none;
-  box-shadow: none;
-}
-
-.whatsapp-card:hover::before, .whatsapp-card:focus-within::before {
-  opacity: 0;
 }
 
 .whatsapp-card__icon {
   flex: 0 0 2.8rem;
   width: 2.8rem;
   height: 2.8rem;
-  color: #25d366;
+  color: var(--destaque);
 }
 
 .whatsapp-card__details {
@@ -816,7 +779,7 @@ h1, h2, h3 {
 
 .whatsapp-card__cta {
   margin-left: auto;
-  color: #25d366;
+  color: var(--destaque);
   font-weight: 600;
 }
 
