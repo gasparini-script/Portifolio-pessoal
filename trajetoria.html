@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trajetória | Rafael Ferreira Gasparini</title>
+  <meta name="description" content="Formação, certificações, habilidades e projetos de Rafael Ferreira Gasparini.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Rafael Gasparini</a>
+      <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Início</a></li>
+          <li><a class="site-nav__link" href="trajetoria.html" aria-current="page">Trajetória</a></li>
+          <li><a class="site-nav__link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Trajetória</h1>
+        <p>Aqui compartilho um pouco do caminho que percorri nos estudos, das certificações e do que venho aprendendo.</p>
+
+        <div class="filters" role="group" aria-label="Filtrar por tema">
+          <button class="filter is-active" type="button" data-filtro="todos" aria-pressed="true">Tudo</button>
+          <button class="filter" type="button" data-filtro="formacao" aria-pressed="false">Formação</button>
+          <button class="filter" type="button" data-filtro="certificacoes" aria-pressed="false">Certificações</button>
+          <button class="filter" type="button" data-filtro="habilidades" aria-pressed="false">Habilidades e projetos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trajectory-block" data-categoria="formacao" aria-labelledby="titulo-formacao">
+      <div class="container">
+        <h2 class="section__title section__head" id="titulo-formacao">Formação acadêmica</h2>
+        <ol class="timeline">
+          <li>
+            <article>
+              <h3>Engenharia de Software</h3>
+              <p class="timeline__place">UniFil, graduação em andamento</p>
+              <p>Na UniFil, sigo aprendendo sobre desenvolvimento de software e os fundamentos da computação.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Experiência acadêmica anterior</h3>
+              <p class="timeline__place">UTFPR, 1 semestre</p>
+              <p>Foi meu primeiro passo no ensino superior, na Universidade Tecnológica Federal do Paraná.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Ensino escolar</h3>
+              <p class="timeline__place">Colégio Sagrado Coração, Bela Vista do Paraíso</p>
+              <p>Estudei no Colégio Sagrado Coração antes de iniciar minha trajetória no ensino superior.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section trajectory-block" data-categoria="certificacoes" aria-labelledby="titulo-certificacoes">
+      <div class="container">
+        <h2 class="section__title section__head" id="titulo-certificacoes">Certificações</h2>
+        <div class="grid-2 certificate-list">
+          <article class="card card--media">
+            <figure>
+              <div class="media media--contain">
+                <img src="fotos/certifcado.png" alt="Certificado BLUEPEX Essentials em Redes, com carga horária de 24 horas" width="720" height="520">
+                <span class="media__fallback">Imagem em breve</span>
+              </div>
+              <figcaption><strong>Certificação em Redes BLUEPEX</strong><span>BLUEPEX Essentials, com carga horária de 24 horas.</span></figcaption>
+            </figure>
+          </article>
+          <article class="card certificate-note">
+            <h3>Introdução à Computação</h3>
+            <p>Curso concluído em 2025.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trajectory-block" data-categoria="habilidades" aria-labelledby="titulo-habilidades">
+      <div class="container">
+        <h2 class="section__title section__head" id="titulo-habilidades">Habilidades</h2>
+        <ul class="skills">
+          <li><img src="fotos/html5.svg" alt="" aria-hidden="true"><span>HTML5</span></li>
+          <li><img src="fotos/css3.svg" alt="" aria-hidden="true"><span>CSS3</span></li>
+          <li><img src="fotos/javascript.svg" alt="" aria-hidden="true"><span>JavaScript</span></li>
+          <li><img src="fotos/c.svg" alt="" aria-hidden="true"><span>C</span></li>
+          <li><img src="fotos/redes.svg" alt="" aria-hidden="true"><span>Redes de computadores</span></li>
+        </ul>
+
+        <h2 class="section__title section__head section__head--spaced" id="titulo-projetos">Projetos</h2>
+        <div class="grid-2 project-list">
+          <article class="card">
+            <h3>Portfólio pessoal</h3>
+            <p>Um espaço para compartilhar minha trajetória, meus estudos e meus projetos.</p>
+            <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">&copy; <span id="ano">2026</span> Rafael Ferreira Gasparini</p>
+      <ul class="site-footer__links">
+        <li><a href="#" data-link="linkedin">LinkedIn</a></li>
+        <li><a href="#" data-link="github">GitHub</a></li>
+        <li><a href="#" data-link="email">Gmail</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rafael Ferreira Gasparini | Engenharia de Software</title>
+  <meta name="description" content="Portfólio de Rafael Ferreira Gasparini, 18 anos, graduando em Engenharia de Software pela UniFil.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Rafael Gasparini</a>
+      <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html" aria-current="page">Início</a></li>
+          <li><a class="site-nav__link" href="trajetoria.html">Trajetória</a></li>
+          <li><a class="site-nav__link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__name" id="titulo-hero">Rafael Ferreira Gasparini</h1>
+          <p class="hero__lead">Tenho 18 anos e curso Engenharia de Software na UniFil. Aqui estão minha formação, minhas certificações e o que estou construindo.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="trajetoria.html">Ver trajetória</a>
+            <a class="btn" href="contato.html">Falar comigo</a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="profile__frame media">
+            <img src="fotos/foto%20de%20perfil.jpg" alt="Foto de Rafael Ferreira Gasparini" width="800" height="800">
+            <span class="media__fallback">RG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="titulo-sobre">
+      <div class="container about">
+        <h2 class="section__title" id="titulo-sobre">Sobre mim</h2>
+        <article class="about__text">
+          <p>Atualmente, curso Engenharia de Software na UniFil e gosto de aprender como as ideias se transformam em soluções.</p>
+          <p>Antes de chegar à UniFil, passei um semestre na UTFPR. Também busco aprender por meio de cursos e certificações, como os de Redes e Introdução à Computação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="titulo-destaques">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" id="titulo-destaques">Em destaque</h2>
+          <p class="section__intro">Passe o mouse ou toque em um card para ver mais detalhes.</p>
+        </div>
+        <div class="highlights">
+          <article class="card" data-revelar tabindex="0">
+            <h3>Engenharia de Software</h3>
+            <p>Graduação em andamento na UniFil.</p>
+            <div class="card__more"><div><p>Curso atual, com foco em desenvolvimento de software e fundamentos de computação.</p></div></div>
+          </article>
+          <article class="card" data-revelar tabindex="0">
+            <h3>Duas certificações</h3>
+            <p>Redes BLUEPEX e Introdução à Computação.</p>
+            <div class="card__more"><div><p>Os certificados estão na página Trajetória, no filtro Certificações.</p></div></div>
+          </article>
+          <article class="card" data-revelar tabindex="0">
+            <h3>Aprendendo a cada dia</h3>
+            <p>Estou sempre buscando novos conhecimentos e desafios.</p>
+            <div class="card__more"><div><p>Quero continuar crescendo na área e transformar o que aprendo em projetos.</p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="titulo-links">
+      <div class="container">
+        <h2 class="section__title" id="titulo-links">Links rápidos</h2>
+        <ul class="quick-links">
+          <li><a href="trajetoria.html">Trajetória<span>Formação, certificações e projetos</span></a></li>
+          <li><a href="contato.html">Contato<span>WhatsApp, LinkedIn e e-mail</span></a></li>
+          <li><a href="#" data-link="github">GitHub<span>Código e projetos</span></a></li>
+          <li><a href="#" data-link="linkedin">LinkedIn<span>Perfil profissional</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">&copy; <span id="ano">2026</span> Rafael Ferreira Gasparini</p>
+      <ul class="site-footer__links">
+        <li><a href="#" data-link="linkedin">LinkedIn</a></li>
+        <li><a href="#" data-link="github">GitHub</a></li>
+        <li><a href="#" data-link="email">Gmail</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
